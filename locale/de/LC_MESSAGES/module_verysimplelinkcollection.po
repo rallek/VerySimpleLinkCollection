@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zikula 1.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-13 19:09+0000\n"
-"PO-Revision-Date: 2014-03-13 20:51+0100\n"
+"POT-Creation-Date: 2014-03-13 20:49+0000\n"
+"PO-Revision-Date: 2014-03-13 21:54+0100\n"
 "Last-Translator: Ralf Köster <ralf@familie-koester.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6.3\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: de\n"
 
 #: workflows/function.standard_permissioncheck.php:56
 msgid "Standard workflow (single approval)"
@@ -241,9 +241,8 @@ msgstr "Beschreibung"
 #: templates/contenttype/itemlist_edit.tpl:67
 #: templates/block/itemlist_modify.tpl:54
 #: templates/block/itemlist_modify.tpl:59
-#, fuzzy
 msgid "Custom template"
-msgstr "Benutzer Template"
+msgstr "Template"
 
 #: lib/VerySimpleLinkCollection/Form/Handler/Admin/Base/Edit.php:221
 #: lib/VerySimpleLinkCollection/Form/Handler/Admin/Base/Edit.php:304
@@ -297,6 +296,14 @@ msgstr "Erledigt! Element gelöscht."
 msgid "Error! Deletion attempt failed."
 msgstr "Fehler! Löschen fehlgeschlagen"
 
+#: lib/VerySimpleLinkCollection/Form/Handler/Admin/Base/Config.php:114
+msgid "Error! Failed to set configuration variables."
+msgstr "Fehler! Setzen von Modulvariablen fehlgeschlagen."
+
+#: lib/VerySimpleLinkCollection/Form/Handler/Admin/Base/Config.php:121
+msgid "Done! Module configuration updated."
+msgstr "Erledigt! Moduleinstellungen aktualisiert."
+
 #: lib/VerySimpleLinkCollection/Form/Handler/Admin/Link/Base/Edit.php:58
 #: lib/VerySimpleLinkCollection/Form/Handler/User/Link/Base/Edit.php:58
 msgid ""
@@ -324,11 +331,11 @@ msgstr "Erledigt! Link gelöscht."
 #: lib/VerySimpleLinkCollection/Form/Handler/Admin/Link/Base/Edit.php:205
 #: lib/VerySimpleLinkCollection/Form/Handler/User/Link/Base/Edit.php:205
 #: lib/VerySimpleLinkCollection/Controller/Base/Admin.php:472
-#, fuzzy, php-format
+#, php-format
 msgid ""
 "Sorry, but an unknown error occured during the %s action. Please apply the "
 "changes again!"
-msgstr "Unbekannter Fehler"
+msgstr ""
 
 #: lib/VerySimpleLinkCollection/ContentType/Base/Item.php:52
 msgid "VerySimpleLinkCollection detail view"
@@ -358,12 +365,14 @@ msgstr "Zeige Liste der Links an"
 #: templates/admin/link/view_quickNav.tpl:17
 #: templates/user/link/view_quickNav.tpl:13
 #: templates/user/link/view_quickNav.tpl:17
+#: templates/user/link/view_quickNav.most.tpl:13
+#: templates/user/link/view_quickNav.most.tpl:17
 #: templates/block/itemlist_modify.tpl:11
 msgid "All"
 msgstr "Alle"
 
 #: lib/VerySimpleLinkCollection/Base/Installer.php:31
-#: lib/VerySimpleLinkCollection/Base/Installer.php:123
+#: lib/VerySimpleLinkCollection/Base/Installer.php:126
 msgid "Doctrine Exception: "
 msgstr "Doctrine Ausnahmefall:"
 
@@ -381,13 +390,13 @@ msgstr ""
 "Bitte aktiviere den Entwicklungsmodus durch Änderung der config/config.php "
 "Datei, um die Ursachen für diesen Fehler angezeigt zu bekommen."
 
-#: lib/VerySimpleLinkCollection/Base/Installer.php:55
+#: lib/VerySimpleLinkCollection/Base/Installer.php:58
 #, php-format
 msgid "Error! Could not create a category registry for the %s entity."
 msgstr ""
 
-#: lib/VerySimpleLinkCollection/Base/Installer.php:116
-#, fuzzy, php-format
+#: lib/VerySimpleLinkCollection/Base/Installer.php:119
+#, php-format
 msgid ""
 "An error was encountered while removing stored object workflows for the %s "
 "extension."
@@ -395,7 +404,7 @@ msgstr ""
 "Während des Entfernens gespeicherter Objekt Arbeitsabläufe für das Modul %s "
 "ist ein Fehler aufgetreten."
 
-#: lib/VerySimpleLinkCollection/Base/Installer.php:125
+#: lib/VerySimpleLinkCollection/Base/Installer.php:128
 #, php-format
 msgid "An error was encountered while dropping tables for the %s extension."
 msgstr ""
@@ -484,8 +493,8 @@ msgstr "Link wartet auf Freigabe"
 #, php-format
 msgid "One link is waiting for approval."
 msgid_plural "%s links are waiting for approval."
-msgstr[0] "Wartend"
-msgstr[1] ""
+msgstr[0] "Ein Link wartet auf Freigabe."
+msgstr[1] "%s Links warten auf Freigabe."
 
 #: lib/VerySimpleLinkCollection/Entity/Validator/Base/Link.php:31
 #, php-format
@@ -590,7 +599,8 @@ msgstr "Wechsel zum Administrationsbereich."
 
 #: lib/VerySimpleLinkCollection/Api/Base/User.php:43
 #: lib/VerySimpleLinkCollection/Api/Base/Admin.php:43
-#: templates/admin/link/view.tpl:4 templates/user/link/view.tpl:4
+#: templates/admin/link/view.tpl:4 templates/user/link/view.most.tpl:4
+#: templates/user/link/view.tpl:4
 msgid "Link list"
 msgstr "Linkliste"
 
@@ -606,6 +616,14 @@ msgstr "Frontend"
 #: lib/VerySimpleLinkCollection/Api/Base/Admin.php:31
 msgid "Switch to user area."
 msgstr "Wechsel zum Nutzerbereich."
+
+#: lib/VerySimpleLinkCollection/Api/Base/Admin.php:47
+msgid "Configuration"
+msgstr "Einstellungen"
+
+#: lib/VerySimpleLinkCollection/Api/Base/Admin.php:48
+msgid "Manage settings for this application"
+msgstr "Verwalte die Einstellungen für dieses Modul"
 
 #: lib/VerySimpleLinkCollection/Controller/Base/User.php:235
 #: lib/VerySimpleLinkCollection/Controller/Base/Admin.php:221
@@ -684,6 +702,7 @@ msgstr "Link suchen und auswählen"
 #: templates/contenttype/itemlist_edit.tpl:22
 #: templates/user/include_categories_edit.tpl:11
 #: templates/user/link/view_quickNav.tpl:21
+#: templates/user/link/view_quickNav.most.tpl:21
 #: templates/block/itemlist_modify.tpl:16
 msgid "Category"
 msgstr "Kategorie"
@@ -700,6 +719,7 @@ msgstr "Kategorie"
 #: templates/user/include_categories_edit.tpl:8
 #: templates/user/include_categories_edit.tpl:14
 #: templates/user/link/view_quickNav.tpl:26
+#: templates/user/link/view_quickNav.most.tpl:26
 #: templates/user/include_categories_display.tpl:4
 #: templates/user/include_categories_display.tpl:7
 #: templates/block/itemlist_modify.tpl:21
@@ -726,6 +746,7 @@ msgstr "ID des Links"
 
 #: templates/external/link/find.tpl:70 templates/external/link/select.tpl:39
 #: templates/admin/link/display.tpl:4 templates/user/link/display.tpl:4
+#: templates/user/link/display.most.tpl:4
 msgid "Link"
 msgstr "Link"
 
@@ -737,12 +758,14 @@ msgstr "Keine Einträge gefunden."
 #: templates/external/link/find.tpl:89 templates/external/link/select.tpl:50
 #: templates/admin/link/view_quickNav.tpl:52
 #: templates/user/link/view_quickNav.tpl:52
+#: templates/user/link/view_quickNav.most.tpl:52
 msgid "Sort by"
 msgstr "Sortiert nach"
 
 #: templates/external/link/find.tpl:91 templates/external/link/select.tpl:52
 #: templates/admin/link/view_quickNav.tpl:55
 #: templates/user/link/view_quickNav.tpl:55
+#: templates/user/link/view_quickNav.most.tpl:55
 msgid "Id"
 msgstr "ID"
 
@@ -751,6 +774,8 @@ msgstr "ID"
 #: templates/admin/link/view_quickNav.tpl:56
 #: templates/user/link/view_quickNav.tpl:39
 #: templates/user/link/view_quickNav.tpl:56
+#: templates/user/link/view_quickNav.most.tpl:39
+#: templates/user/link/view_quickNav.most.tpl:56
 msgid "Workflow state"
 msgstr "Status Workflow"
 
@@ -758,8 +783,10 @@ msgstr "Status Workflow"
 #: templates/admin/link/display.tpl:15
 #: templates/admin/link/view_quickNav.tpl:57 templates/admin/link/view.tpl:58
 #: templates/admin/link/edit.tpl:31 templates/user/link/display.tpl:12
-#: templates/user/link/view_quickNav.tpl:57 templates/user/link/view.tpl:47
-#: templates/user/link/edit.tpl:25
+#: templates/user/link/view_quickNav.tpl:57
+#: templates/user/link/view.most.tpl:47 templates/user/link/view.tpl:47
+#: templates/user/link/edit.tpl:25 templates/user/link/display.most.tpl:12
+#: templates/user/link/view_quickNav.most.tpl:57
 msgid "Link name"
 msgstr "Link Name"
 
@@ -767,8 +794,10 @@ msgstr "Link Name"
 #: templates/admin/link/display.tpl:17
 #: templates/admin/link/view_quickNav.tpl:58 templates/admin/link/view.tpl:61
 #: templates/admin/link/edit.tpl:37 templates/user/link/display.tpl:14
-#: templates/user/link/view_quickNav.tpl:58 templates/user/link/view.tpl:50
-#: templates/user/link/edit.tpl:31
+#: templates/user/link/view_quickNav.tpl:58
+#: templates/user/link/view.most.tpl:50 templates/user/link/view.tpl:50
+#: templates/user/link/edit.tpl:31 templates/user/link/display.most.tpl:14
+#: templates/user/link/view_quickNav.most.tpl:58
 msgid "Link text"
 msgstr "Link Beschreibung"
 
@@ -776,44 +805,52 @@ msgstr "Link Beschreibung"
 #: templates/admin/link/display.tpl:19
 #: templates/admin/link/view_quickNav.tpl:59 templates/admin/link/view.tpl:64
 #: templates/admin/link/edit.tpl:42 templates/user/link/display.tpl:16
-#: templates/user/link/view_quickNav.tpl:59 templates/user/link/view.tpl:53
-#: templates/user/link/edit.tpl:36
-msgid "Link u r l"
-msgstr "Link URL"
+#: templates/user/link/view_quickNav.tpl:59
+#: templates/user/link/view.most.tpl:53 templates/user/link/view.tpl:53
+#: templates/user/link/edit.tpl:36 templates/user/link/display.most.tpl:16
+#: templates/user/link/view_quickNav.most.tpl:59
+msgid "Link url"
+msgstr "Bitte gib eine gültige url ein."
 
 #: templates/external/link/find.tpl:96 templates/external/link/select.tpl:57
 #: templates/admin/link/view_quickNav.tpl:60
 #: templates/user/link/view_quickNav.tpl:60
+#: templates/user/link/view_quickNav.most.tpl:60
 msgid "Creation date"
 msgstr "Erstellungsdatum"
 
 #: templates/external/link/find.tpl:97 templates/external/link/select.tpl:58
 #: templates/admin/link/view_quickNav.tpl:61
 #: templates/user/link/view_quickNav.tpl:61
+#: templates/user/link/view_quickNav.most.tpl:61
 msgid "Creator"
 msgstr "Ersteller"
 
 #: templates/external/link/find.tpl:98 templates/external/link/select.tpl:59
 #: templates/admin/link/view_quickNav.tpl:62
 #: templates/user/link/view_quickNav.tpl:62
+#: templates/user/link/view_quickNav.most.tpl:62
 msgid "Update date"
 msgstr "Aktualisierungsdatum"
 
 #: templates/external/link/find.tpl:101 templates/external/link/select.tpl:62
 #: templates/admin/link/view_quickNav.tpl:65
 #: templates/user/link/view_quickNav.tpl:65
+#: templates/user/link/view_quickNav.most.tpl:65
 msgid "ascending"
 msgstr "Aufsteigend"
 
 #: templates/external/link/find.tpl:102 templates/external/link/select.tpl:63
 #: templates/admin/link/view_quickNav.tpl:66
 #: templates/user/link/view_quickNav.tpl:66
+#: templates/user/link/view_quickNav.most.tpl:66
 msgid "descending"
 msgstr "Absteigend"
 
-#: templates/external/link/find.tpl:107
+#: templates/external/link/find.tpl:107 templates/admin/config.tpl:22
 #: templates/admin/link/view_quickNav.tpl:73
 #: templates/user/link/view_quickNav.tpl:73
+#: templates/user/link/view_quickNav.most.tpl:73
 msgid "Page size"
 msgstr "Elemente pro Seite"
 
@@ -829,14 +866,35 @@ msgstr "Filter"
 msgid "Change selection"
 msgstr "Bitte ändere die Wahl."
 
-#: templates/external/link/find.tpl:129 templates/admin/link/edit.tpl:93
-#: templates/admin/link/delete.tpl:22 templates/user/link/edit.tpl:87
+#: templates/external/link/find.tpl:129 templates/admin/config.tpl:29
+#: templates/admin/link/edit.tpl:93 templates/admin/link/delete.tpl:22
+#: templates/user/link/edit.tpl:87
 msgid "Cancel"
 msgstr "Abbrechen"
 
 #: templates/external/link/select.tpl:4
 msgid "Link information"
 msgstr "Link Information"
+
+#: templates/admin/config.tpl:4 templates/admin/config.tpl:7
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: templates/admin/config.tpl:15
+msgid "Variables"
+msgstr "Variablen"
+
+#: templates/admin/config.tpl:19
+msgid "Here you can manage all basic settings for this application."
+msgstr "Hier kannst Du die Grundeinstellungen für dieses Modul verwalten."
+
+#: templates/admin/config.tpl:23
+msgid "Enter the page size. Only digits are allowed."
+msgstr "Gib die maximale Seitenzahl ein. Nur Ziffern sind erlaubt."
+
+#: templates/admin/config.tpl:28
+msgid "Update configuration"
+msgstr "Einstellungen aktualisieren"
 
 #: templates/admin/include_standardfields_edit.tpl:4
 #: templates/admin/include_standardfields_edit.tpl:9
@@ -875,38 +933,46 @@ msgstr "Aktualisiert von %s"
 
 #: templates/admin/link/display.tpl:9 templates/admin/link/view.tpl:66
 #: templates/admin/link/view.tpl:93 templates/user/link/display.tpl:7
+#: templates/user/link/view.most.tpl:55 templates/user/link/view.most.tpl:79
 #: templates/user/link/view.tpl:55 templates/user/link/view.tpl:79
+#: templates/user/link/display.most.tpl:7
 msgid "Actions"
 msgstr "Aktionen"
 
 #: templates/admin/link/display.tpl:13 templates/admin/link/view.tpl:55
-#: templates/user/link/display.tpl:10 templates/user/link/view.tpl:44
+#: templates/user/link/display.tpl:10 templates/user/link/view.most.tpl:44
+#: templates/user/link/view.tpl:44 templates/user/link/display.most.tpl:10
 msgid "State"
 msgstr "Status"
 
 # passt das?
 #: templates/admin/link/display.tpl:21 templates/admin/link/view.tpl:86
-#: templates/user/link/display.tpl:18 templates/user/link/view.tpl:72
+#: templates/user/link/display.tpl:18 templates/user/link/view.most.tpl:72
+#: templates/user/link/view.tpl:72 templates/user/link/display.most.tpl:18
 msgid "Visit this page"
 msgstr "Seite aufrufen"
 
 #: templates/admin/link/display.tpl:21 templates/admin/link/view.tpl:86
-#: templates/user/link/display.tpl:18 templates/user/link/view.tpl:72
+#: templates/user/link/display.tpl:18 templates/user/link/view.most.tpl:72
+#: templates/user/link/view.tpl:72 templates/user/link/display.most.tpl:18
 msgid "Homepage"
 msgstr "Homepage"
 
 #: templates/admin/link/view_quickNav.tpl:6
 #: templates/user/link/view_quickNav.tpl:6
+#: templates/user/link/view_quickNav.most.tpl:6
 msgid "Quick navigation"
 msgstr "Schnellnavigation"
 
 #: templates/admin/link/view_quickNav.tpl:48
 #: templates/user/link/view_quickNav.tpl:48
+#: templates/user/link/view_quickNav.most.tpl:48
 msgid "Search"
 msgstr "Suchen"
 
 #: templates/admin/link/view_quickNav.tpl:84
 #: templates/user/link/view_quickNav.tpl:84
+#: templates/user/link/view_quickNav.most.tpl:84
 msgid "OK"
 msgstr "OK"
 
@@ -925,19 +991,23 @@ msgid "Quick view"
 msgstr "Schnellansicht"
 
 #: templates/admin/link/view.tpl:13 templates/admin/link/edit.tpl:10
-#: templates/user/link/view.tpl:10 templates/user/link/edit.tpl:9
+#: templates/user/link/view.most.tpl:10 templates/user/link/view.tpl:10
+#: templates/user/link/edit.tpl:9
 msgid "Create link"
 msgstr "Erstelle Link"
 
-#: templates/admin/link/view.tpl:23 templates/user/link/view.tpl:20
+#: templates/admin/link/view.tpl:23 templates/user/link/view.most.tpl:20
+#: templates/user/link/view.tpl:20
 msgid "Back to paginated view"
 msgstr "Zurück zur Seitenansicht"
 
-#: templates/admin/link/view.tpl:29 templates/user/link/view.tpl:26
+#: templates/admin/link/view.tpl:29 templates/user/link/view.most.tpl:26
+#: templates/user/link/view.tpl:26
 msgid "Show all entries"
 msgstr "Zeige alle Einträge"
 
-#: templates/admin/link/view.tpl:106 templates/user/link/view.tpl:92
+#: templates/admin/link/view.tpl:106 templates/user/link/view.most.tpl:92
+#: templates/user/link/view.tpl:92
 msgid "No links found."
 msgstr "Keine Links gefunden"
 
@@ -967,8 +1037,8 @@ msgid "Enter the link text of the link"
 msgstr "Eine Beschreibung zum Link eingeben"
 
 #: templates/admin/link/edit.tpl:43 templates/user/link/edit.tpl:37
-msgid "Enter the link u r l of the link"
-msgstr "Die URL (inkl. http// bzw. https//) eingeben"
+msgid "Enter the link url of the link"
+msgstr "Linkname eingeben"
 
 #: templates/admin/link/edit.tpl:72 templates/user/link/edit.tpl:66
 msgid "Return control"
