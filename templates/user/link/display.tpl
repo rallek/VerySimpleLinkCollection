@@ -15,9 +15,9 @@
         <dd>{$link.linkText}</dd>
         <dt>{gt text='Link u r l'}</dt>
         <dd>{if !isset($smarty.get.theme) || $smarty.get.theme ne 'Printer'}
-        <a href="{$link.linkURL}" title="{gt text='Visit this page'}">{icon type='url' size='extrasmall' __alt='Homepage'}</a>
+        <a href="{$link.linkUrl}" title="{gt text='Visit this page'}">{icon type='url' size='extrasmall' __alt='Homepage'}</a>
         {else}
-          {$link.linkURL}
+          {$link.linkUrl}
         {/if}
         </dd>
         

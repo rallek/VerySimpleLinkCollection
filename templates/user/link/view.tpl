@@ -34,7 +34,7 @@
             <col id="cWorkflowState" />
             <col id="cLinkName" />
             <col id="cLinkText" />
-            <col id="cLinkURL" />
+            <col id="cLinkUrl" />
             <col id="cItemActions" />
         </colgroup>
         <thead>
@@ -49,8 +49,8 @@
             <th id="hLinkText" scope="col" class="z-left">
                 {sortlink __linktext='Link text' currentsort=$sort modname='VerySimpleLinkCollection' type='user' func='view' ot='link' sort='linkText' sortdir=$sdir all=$all own=$own catidMain=$catIdListMainString workflowState=$workflowState searchterm=$searchterm pageSize=$pageSize}
             </th>
-<!--             <th id="hLinkURL" scope="col" class="z-left">
-                {sortlink __linktext='Link u r l' currentsort=$sort modname='VerySimpleLinkCollection' type='user' func='view' ot='link' sort='linkURL' sortdir=$sdir all=$all own=$own catidMain=$catIdListMainString workflowState=$workflowState searchterm=$searchterm pageSize=$pageSize}
+<!--             <th id="hLinkUrl" scope="col" class="z-left">
+                {sortlink __linktext='Link url' currentsort=$sort modname='VerySimpleLinkCollection' type='user' func='view' ot='link' sort='linkUrl' sortdir=$sdir all=$all own=$own catidMain=$catIdListMainString workflowState=$workflowState searchterm=$searchterm pageSize=$pageSize}
             </th> -->
             <th id="hItemActions" scope="col" class="z-right z-order-unsorted">{gt text='Actions'}</th>
         </tr>
@@ -63,13 +63,13 @@
                 {$link.workflowState|verysimplelinkcollectionObjectState}
             </td> -->
             <td headers="hLinkName" class="z-left">
-                <a href="{$link.linkURL}" target=blank>{$link.linkName}</a>
+                <a href="{$link.linkUrl}" target=blank>{$link.linkName}</a>
             </td>
             <td headers="hLinkText" class="z-left">
                 {$link.linkText|truncate:80}
             </td>
-<!--             <td headers="hLinkURL" class="z-left">
-                <a href="{$link.linkURL}" title="{gt text='Visit this page'}">{icon type='url' size='extrasmall' __alt='Homepage'}</a>
+<!--             <td headers="hLinkUrl" class="z-left">
+                <a href="{$link.linkUrl}" title="{gt text='Visit this page'}">{icon type='url' size='extrasmall' __alt='Homepage'}</a>
             </td> -->
             <td id="itemActions{$link.id}" headers="hItemActions" class="z-right z-nowrap z-w02">
                 {if count($link._actions) gt 0}

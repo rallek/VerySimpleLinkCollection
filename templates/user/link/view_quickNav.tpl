@@ -56,7 +56,7 @@
                     <option value="workflowState"{if $sort eq 'workflowState'} selected="selected"{/if}>{gt text='Workflow state'}</option> -->
                     <option value="linkName"{if $sort eq 'linkName'} selected="selected"{/if}>{gt text='Link name'}</option>
 <!--                     <option value="linkText"{if $sort eq 'linkText'} selected="selected"{/if}>{gt text='Link text'}</option> -->
-                    <option value="linkURL"{if $sort eq 'linkURL'} selected="selected"{/if}>{gt text='Link u r l'}</option>
+                    <option value="linkUrl"{if $sort eq 'linkUrl'} selected="selected"{/if}>{gt text='Link url'}</option>
                     <option value="createdDate"{if $sort eq 'createdDate'} selected="selected"{/if}>{gt text='Creation date'}</option>
                     <option value="createdUserId"{if $sort eq 'createdUserId'} selected="selected"{/if}>{gt text='Creator'}</option>
                     <option value="updatedDate"{if $sort eq 'updatedDate'} selected="selected"{/if}>{gt text='Update date'}</option>
