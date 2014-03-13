@@ -37,6 +37,9 @@ class VerySimpleLinkCollection_Base_Installer extends Zikula_AbstractInstaller
             return LogUtil::registerError($returnMessage);
         }
     
+        // set up all our vars with initial values
+        $this->setVar('pageSize', 20);
+    
         $categoryRegistryIdsPerEntity = array();
     
         // add default entry for category registry (property named Main)
@@ -131,6 +134,9 @@ class VerySimpleLinkCollection_Base_Installer extends Zikula_AbstractInstaller
         // unregister hook subscriber bundles
         HookUtil::unregisterSubscriberBundles($this->version->getHookSubscriberBundles());
         
+    
+        // remove all module vars
+        $this->delVars();
     
         // remove category registry entries
         ModUtil::dbInfoLoad('Categories');

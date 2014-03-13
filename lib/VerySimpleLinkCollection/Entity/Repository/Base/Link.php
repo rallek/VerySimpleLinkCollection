@@ -27,7 +27,7 @@ class VerySimpleLinkCollection_Entity_Repository_Base_Link extends EntityReposit
     /**
      * @var string The default sorting field/expression.
      */
-    protected $defaultSortingField = 'id';
+    protected $defaultSortingField = 'linkName';
 
     /**
      * @var array Additional arguments given by the calling controller.
@@ -46,7 +46,7 @@ class VerySimpleLinkCollection_Entity_Repository_Base_Link extends EntityReposit
             'workflowState',
             'linkName',
             'linkText',
-            'linkURL',
+            'linkUrl',
             'createdUserId',
             'updatedUserId',
             'createdDate',
@@ -106,7 +106,7 @@ class VerySimpleLinkCollection_Entity_Repository_Base_Link extends EntityReposit
      */
     public function getTitleFieldName()
     {
-        $fieldName = '';
+        $fieldName = 'linkName';
     
         return $fieldName;
     }
@@ -118,7 +118,7 @@ class VerySimpleLinkCollection_Entity_Repository_Base_Link extends EntityReposit
      */
     public function getDescriptionFieldName()
     {
-        $fieldName = 'linkName';
+        $fieldName = 'linkText';
     
         return $fieldName;
     }
@@ -644,7 +644,7 @@ class VerySimpleLinkCollection_Entity_Repository_Base_Link extends EntityReposit
             $where .= ((!empty($where)) ? ' OR ' : '');
             $where .= 'tbl.linkText LIKE \'%' . $fragment . '%\'';
             $where .= ((!empty($where)) ? ' OR ' : '');
-            $where .= 'tbl.linkURL = \'' . $fragment . '\'';
+            $where .= 'tbl.linkUrl = \'' . $fragment . '\'';
         } else {
             $where .= ((!empty($where)) ? ' OR ' : '');
             $where .= 'tbl.workflowState = \'' . $fragment . '\'';
@@ -653,7 +653,7 @@ class VerySimpleLinkCollection_Entity_Repository_Base_Link extends EntityReposit
             $where .= ((!empty($where)) ? ' OR ' : '');
             $where .= 'tbl.linkText LIKE \'%' . $fragment . '%\'';
             $where .= ((!empty($where)) ? ' OR ' : '');
-            $where .= 'tbl.linkURL = \'' . $fragment . '\'';
+            $where .= 'tbl.linkUrl = \'' . $fragment . '\'';
         }
         $where = '(' . $where . ')';
     

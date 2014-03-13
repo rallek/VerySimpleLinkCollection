@@ -1,11 +1,11 @@
-{* purpose of this template: links view filter form in admin area *}
+{* purpose of this template: links view filter form in user area *}
 {checkpermissionblock component='VerySimpleLinkCollection:Link:' instance='::' level='ACCESS_EDIT'}
 {assign var='objectType' value='link'}
 <form action="{$modvars.ZConfig.entrypoint|default:'index.php'}" method="get" id="verySimpleLinkCollectionLinkQuickNavForm" class="verysimplelinkcollection-quicknav">
     <fieldset>
         <h3>{gt text='Quick navigation'}</h3>
         <input type="hidden" name="module" value="{modgetinfo modname='VerySimpleLinkCollection' info='url'}" />
-        <input type="hidden" name="type" value="admin" />
+        <input type="hidden" name="type" value="user" />
         <input type="hidden" name="func" value="view" />
         <input type="hidden" name="ot" value="link" />
         <input type="hidden" name="all" value="{$all|default:0}" />
@@ -88,7 +88,7 @@
 <script type="text/javascript">
 /* <![CDATA[ */
     document.observe('dom:loaded', function() {
-        vslcInitQuickNavigation('link', 'admin');
+        vslcInitQuickNavigation('link', 'user');
         {{if isset($searchFilter) && $searchFilter eq false}}
             {{* we can hide the submit button if we have no quick search field *}}
             $('quicknavSubmit').addClassName('z-hide');

@@ -39,8 +39,8 @@ class VerySimpleLinkCollection_Entity_Validator_Base_Link extends VerySimpleLink
             $errorInfo['message'] = __f('Error! Field value must not be empty (%s).', array('workflow state'), $dom);
             return $errorInfo;
         }
-        if (!$this->isStringNotLongerThan('linkName', 2000)) {
-            $errorInfo['message'] = __f('Error! Length of field value must not be higher than %2$s (%1$s).', array('link name', 2000), $dom);
+        if (!$this->isStringNotLongerThan('linkName', 255)) {
+            $errorInfo['message'] = __f('Error! Length of field value must not be higher than %2$s (%1$s).', array('link name', 255), $dom);
             return $errorInfo;
         }
         if (!$this->isStringNotEmpty('linkName')) {
@@ -51,16 +51,16 @@ class VerySimpleLinkCollection_Entity_Validator_Base_Link extends VerySimpleLink
             $errorInfo['message'] = __f('Error! Length of field value must not be higher than %2$s (%1$s).', array('link text', 2000), $dom);
             return $errorInfo;
         }
-        if (!$this->isStringNotLongerThan('linkURL', 255)) {
-            $errorInfo['message'] = __f('Error! Length of field value must not be higher than %2$s (%1$s).', array('link u r l', 255), $dom);
+        if (!$this->isStringNotLongerThan('linkUrl', 255)) {
+            $errorInfo['message'] = __f('Error! Length of field value must not be higher than %2$s (%1$s).', array('link url', 255), $dom);
             return $errorInfo;
         }
-        if (!$this->isStringNotEmpty('linkURL')) {
-            $errorInfo['message'] = __f('Error! Field value must not be empty (%s).', array('link u r l'), $dom);
+        if (!$this->isStringNotEmpty('linkUrl')) {
+            $errorInfo['message'] = __f('Error! Field value must not be empty (%s).', array('link url'), $dom);
             return $errorInfo;
         }
-        if (!$this->isValidUrl('linkURL')) {
-            $errorInfo['message'] = __f('Error! Field value must be a valid url (%s).', array('link u r l'), $dom);
+        if (!$this->isValidUrl('linkUrl')) {
+            $errorInfo['message'] = __f('Error! Field value must be a valid url (%s).', array('link url'), $dom);
             return $errorInfo;
         }
     

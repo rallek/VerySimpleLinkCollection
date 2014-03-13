@@ -65,8 +65,8 @@ abstract class VerySimpleLinkCollection_Entity_Base_Link extends Zikula_EntityAc
     protected $workflowState = 'initial';
     
     /**
-     * @ORM\Column(type="text", length=2000)
-     * @var text $linkName.
+     * @ORM\Column(length=255)
+     * @var string $linkName.
      */
     protected $linkName = '';
     
@@ -78,9 +78,9 @@ abstract class VerySimpleLinkCollection_Entity_Base_Link extends Zikula_EntityAc
     
     /**
      * @ORM\Column(length=255)
-     * @var string $linkURL.
+     * @var string $linkUrl.
      */
-    protected $linkURL = '';
+    protected $linkUrl = '';
     
     
     /**
@@ -298,7 +298,7 @@ abstract class VerySimpleLinkCollection_Entity_Base_Link extends Zikula_EntityAc
     /**
      * Get link name.
      *
-     * @return text
+     * @return string
      */
     public function getLinkName()
     {
@@ -308,7 +308,7 @@ abstract class VerySimpleLinkCollection_Entity_Base_Link extends Zikula_EntityAc
     /**
      * Set link name.
      *
-     * @param text $linkName.
+     * @param string $linkName.
      *
      * @return void
      */
@@ -344,26 +344,26 @@ abstract class VerySimpleLinkCollection_Entity_Base_Link extends Zikula_EntityAc
     }
     
     /**
-     * Get link u r l.
+     * Get link url.
      *
      * @return string
      */
-    public function getLinkURL()
+    public function getLinkUrl()
     {
-        return $this->linkURL;
+        return $this->linkUrl;
     }
     
     /**
-     * Set link u r l.
+     * Set link url.
      *
-     * @param string $linkURL.
+     * @param string $linkUrl.
      *
      * @return void
      */
-    public function setLinkURL($linkURL)
+    public function setLinkUrl($linkUrl)
     {
-        if ($linkURL != $this->linkURL) {
-            $this->linkURL = $linkURL;
+        if ($linkUrl != $this->linkUrl) {
+            $this->linkUrl = $linkUrl;
         }
     }
     
@@ -752,7 +752,7 @@ abstract class VerySimpleLinkCollection_Entity_Base_Link extends Zikula_EntityAc
         $this->formatTextualField('workflowState', $currentFunc, $usesCsvOutput, true);
         $this->formatTextualField('linkName', $currentFunc, $usesCsvOutput);
         $this->formatTextualField('linkText', $currentFunc, $usesCsvOutput);
-        $this['linkURL'] = ((isset($this['linkURL']) && !empty($this['linkURL'])) ? DataUtil::formatForDisplay($this['linkURL']) : '');
+        $this['linkUrl'] = ((isset($this['linkUrl']) && !empty($this['linkUrl'])) ? DataUtil::formatForDisplay($this['linkUrl']) : '');
     
         $this->prepareItemActions();
     

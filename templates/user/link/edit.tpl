@@ -23,7 +23,7 @@
         
         <div class="z-formrow">
             {formlabel for='linkName' __text='Link name' mandatorysym='1' cssClass=''}
-            {formtextinput group='link' id='linkName' mandatory=true __title='Enter the link name of the link' textMode='multiline' rows='6' cols='50' cssClass='required' }
+            {formtextinput group='link' id='linkName' mandatory=true readOnly=false __title='Enter the link name of the link' textMode='singleline' maxLength=255 cssClass='required' }
             {verysimplelinkcollectionValidationError id='linkName' class='required'}
         </div>
         
@@ -33,10 +33,10 @@
         </div>
         
         <div class="z-formrow">
-            {formlabel for='linkURL' __text='Link u r l' mandatorysym='1' cssClass=''}
-            {formurlinput group='link' id='linkURL' mandatory=true readOnly=false __title='Enter the link u r l of the link' textMode='singleline' maxLength=255 cssClass='required validate-url' }
-            {verysimplelinkcollectionValidationError id='linkURL' class='required'}
-            {verysimplelinkcollectionValidationError id='linkURL' class='validate-url'}
+            {formlabel for='linkUrl' __text='Link url' mandatorysym='1' cssClass=''}
+            {formurlinput group='link' id='linkUrl' mandatory=true readOnly=false __title='Enter the link url of the link' textMode='singleline' maxLength=255 cssClass='required validate-url' }
+            {verysimplelinkcollectionValidationError id='linkUrl' class='required'}
+            {verysimplelinkcollectionValidationError id='linkUrl' class='validate-url'}
         </div>
     </fieldset>
     

@@ -1,13 +1,10 @@
-{* purpose of this template: links display view in admin area *}
-{include file='admin/header.tpl'}
+{* purpose of this template: links display view in user area *}
+{include file='user/header.tpl'}
 <div class="verysimplelinkcollection-link verysimplelinkcollection-display">
     {gt text='Link' assign='templateTitle'}
     {assign var='templateTitle' value=$link->getTitleFromDisplayPattern()|default:$templateTitle}
     {pagesetvar name='title' value=$templateTitle|@html_entity_decode}
-    <div class="z-admin-content-pagetitle">
-        {icon type='display' size='small' __alt='Details'}
-        <h3>{$templateTitle|notifyfilters:'verysimplelinkcollection.filter_hooks.links.filter'} <small>({$link.workflowState|verysimplelinkcollectionObjectState:false|lower})</small>{icon id='itemActionsTrigger' type='options' size='extrasmall' __alt='Actions' class='z-pointer z-hide'}</h3>
-    </div>
+    <h2>{$templateTitle|notifyfilters:'verysimplelinkcollection.filter_hooks.links.filter'} <small>({$link.workflowState|verysimplelinkcollectionObjectState:false|lower})</small>{icon id='itemActionsTrigger' type='options' size='extrasmall' __alt='Actions' class='z-pointer z-hide'}</h2>
 
     <dl>
         <dt>{gt text='State'}</dt>
@@ -25,8 +22,8 @@
         </dd>
         
     </dl>
-    {include file='admin/include_categories_display.tpl' obj=$link}
-    {include file='admin/include_standardfields_display.tpl' obj=$link}
+    {include file='user/include_categories_display.tpl' obj=$link}
+    {include file='user/include_standardfields_display.tpl' obj=$link}
 
     {if !isset($smarty.get.theme) || $smarty.get.theme ne 'Printer'}
         {* include display hooks *}
@@ -50,4 +47,4 @@
         {/if}
     {/if}
 </div>
-{include file='admin/footer.tpl'}
+{include file='user/footer.tpl'}

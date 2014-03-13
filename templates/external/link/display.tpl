@@ -31,7 +31,7 @@
     {* you can enable more details about the item: *}
     {*
         <p class="verysimplelinkcollection-external-description">
-            {if $link.linkName ne ''}{$link.linkName}<br />{/if}
+            {if $link.linkText ne ''}{$link.linkText}<br />{/if}
             {assignedcategorieslist categories=$link.categories doctrine2=true}
         </p>
     *}

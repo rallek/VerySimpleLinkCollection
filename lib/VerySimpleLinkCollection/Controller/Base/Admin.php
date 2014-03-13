@@ -530,4 +530,22 @@ class VerySimpleLinkCollection_Controller_Base_Admin extends Zikula_AbstractCont
 
         return true;
     }
+
+    /**
+     * This method takes care of the application configuration.
+     *
+     * @return string Output
+     */
+    public function config()
+    {
+        $this->throwForbiddenUnless(SecurityUtil::checkPermission($this->name . '::', '::', ACCESS_ADMIN));
+
+        // Create new Form reference
+        $view = FormUtil::newForm($this->name, $this);
+
+        $templateName = 'admin/config.tpl';
+
+        // Execute form using supplied template and page event handler
+        return $view->execute($templateName, new VerySimpleLinkCollection_Form_Handler_Admin_Config());
+    }
 }

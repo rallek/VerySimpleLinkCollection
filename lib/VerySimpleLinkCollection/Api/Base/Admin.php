@@ -42,6 +42,11 @@ class VerySimpleLinkCollection_Api_Base_Admin extends Zikula_AbstractApi
                              'text' => $this->__('Links'),
                              'title' => $this->__('Link list'));
         }
+        if (SecurityUtil::checkPermission($this->name . '::', '::', ACCESS_ADMIN)) {
+            $links[] = array('url' => ModUtil::url($this->name, 'admin', 'config'),
+                             'text' => $this->__('Configuration'),
+                             'title' => $this->__('Manage settings for this application'));
+        }
 
         return $links;
     }

@@ -90,7 +90,7 @@ class VerySimpleLinkCollection_Api_Base_Search extends Zikula_AbstractApi
                     $whereArray[] = 'tbl.workflowState';
                     $whereArray[] = 'tbl.linkName';
                     $whereArray[] = 'tbl.linkText';
-                    $whereArray[] = 'tbl.linkURL';
+                    $whereArray[] = 'tbl.linkUrl';
                     break;
             }
             $where = Search_Api_User::construct_where($args, $whereArray, $languageField);
