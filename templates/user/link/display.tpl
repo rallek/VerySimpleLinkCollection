@@ -4,11 +4,11 @@
     {gt text='Link' assign='templateTitle'}
     {assign var='templateTitle' value=$link->getTitleFromDisplayPattern()|default:$templateTitle}
     {pagesetvar name='title' value=$templateTitle|@html_entity_decode}
-    <h2>{$templateTitle|notifyfilters:'verysimplelinkcollection.filter_hooks.links.filter'} <small>({$link.workflowState|verysimplelinkcollectionObjectState:false|lower})</small>{icon id='itemActionsTrigger' type='options' size='extrasmall' __alt='Actions' class='z-pointer z-hide'}</h2>
+    <h2>{$templateTitle|notifyfilters:'verysimplelinkcollection.filter_hooks.links.filter'} <!-- <small>({$link.workflowState|verysimplelinkcollectionObjectState:false|lower})</small> -->{icon id='itemActionsTrigger' type='options' size='extrasmall' __alt='Actions' class='z-pointer z-hide'}</h2>
 
     <dl>
-        <dt>{gt text='State'}</dt>
-        <dd>{$link.workflowState|verysimplelinkcollectionGetListEntry:'link':'workflowState'|safetext}</dd>
+<!--         <dt>{gt text='State'}</dt>
+        <dd>{$link.workflowState|verysimplelinkcollectionGetListEntry:'link':'workflowState'|safetext}</dd> -->
         <dt>{gt text='Link name'}</dt>
         <dd>{$link.linkName}</dd>
         <dt>{gt text='Link text'}</dt>

@@ -27,7 +27,7 @@
         <a href="{modurl modname='VerySimpleLinkCollection' type='user' func='view' ot='link' all=1}" title="{$linkTitle}" class="z-icon-es-view">{$linkTitle}</a>
     {/if}
 
-    {include file='user/link/view_quickNav.tpl' all=$all own=$own}{* see template file for available options *}
+    {include file='user/link/view_quickNav.tpl' all=$all own=$own workflowStateFilter=false id=false}{* see template file for available options *}
 
     <table class="z-datatable">
         <colgroup>
@@ -40,18 +40,18 @@
         <thead>
         <tr>
             {assign var='catIdListMainString' value=','|implode:$catIdList.Main}
-            <th id="hWorkflowState" scope="col" class="z-left">
+<!--             <th id="hWorkflowState" scope="col" class="z-left">
                 {sortlink __linktext='State' currentsort=$sort modname='VerySimpleLinkCollection' type='user' func='view' ot='link' sort='workflowState' sortdir=$sdir all=$all own=$own catidMain=$catIdListMainString workflowState=$workflowState searchterm=$searchterm pageSize=$pageSize}
-            </th>
+            </th> -->
             <th id="hLinkName" scope="col" class="z-left">
                 {sortlink __linktext='Link name' currentsort=$sort modname='VerySimpleLinkCollection' type='user' func='view' ot='link' sort='linkName' sortdir=$sdir all=$all own=$own catidMain=$catIdListMainString workflowState=$workflowState searchterm=$searchterm pageSize=$pageSize}
             </th>
             <th id="hLinkText" scope="col" class="z-left">
                 {sortlink __linktext='Link text' currentsort=$sort modname='VerySimpleLinkCollection' type='user' func='view' ot='link' sort='linkText' sortdir=$sdir all=$all own=$own catidMain=$catIdListMainString workflowState=$workflowState searchterm=$searchterm pageSize=$pageSize}
             </th>
-            <th id="hLinkURL" scope="col" class="z-left">
+<!--             <th id="hLinkURL" scope="col" class="z-left">
                 {sortlink __linktext='Link u r l' currentsort=$sort modname='VerySimpleLinkCollection' type='user' func='view' ot='link' sort='linkURL' sortdir=$sdir all=$all own=$own catidMain=$catIdListMainString workflowState=$workflowState searchterm=$searchterm pageSize=$pageSize}
-            </th>
+            </th> -->
             <th id="hItemActions" scope="col" class="z-right z-order-unsorted">{gt text='Actions'}</th>
         </tr>
         </thead>
@@ -59,18 +59,18 @@
     
     {foreach item='link' from=$items}
         <tr class="{cycle values='z-odd, z-even'}">
-            <td headers="hWorkflowState" class="z-left z-nowrap">
+<!--             <td headers="hWorkflowState" class="z-left z-nowrap">
                 {$link.workflowState|verysimplelinkcollectionObjectState}
-            </td>
+            </td> -->
             <td headers="hLinkName" class="z-left">
-                {$link.linkName}
+                <a href="{$link.linkURL}" target=blank>{$link.linkName}</a>
             </td>
             <td headers="hLinkText" class="z-left">
-                {$link.linkText}
+                {$link.linkText|truncate:80}
             </td>
-            <td headers="hLinkURL" class="z-left">
+<!--             <td headers="hLinkURL" class="z-left">
                 <a href="{$link.linkURL}" title="{gt text='Visit this page'}">{icon type='url' size='extrasmall' __alt='Homepage'}</a>
-            </td>
+            </td> -->
             <td id="itemActions{$link.id}" headers="hItemActions" class="z-right z-nowrap z-w02">
                 {if count($link._actions) gt 0}
                     {foreach item='option' from=$link._actions}
