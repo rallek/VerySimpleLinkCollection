@@ -1,0 +1,51 @@
+body {
+    background-color: #ddd;
+    margin: 10px;
+    text-align: left;
+}
+
+.verysimplelinkcollection-finderform fieldset,
+.verysimplelinkcollection-finderform fieldset legend {
+    background-color: #fff;
+    border: none;
+}
+
+#verysimplelinkcollectionItemContainer {
+    background-color: #eee;
+    height: 300px;
+    overflow: auto;
+    padding: 5px;
+}
+
+#verysimplelinkcollectionItemContainer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#verysimplelinkcollectionItemContainer a {
+    color: #000;
+    margin: 0.1em 0.2em;
+    text-decoration: underline;
+}
+#verysimplelinkcollectionItemContainer a:hover,
+#verysimplelinkcollectionItemContainer a:focus,
+#verysimplelinkcollectionItemContainer a:active {
+    color: #900;
+    text-decoration: none;
+}
+
+#verysimplelinkcollectionItemContainer a img {
+    border: none;
+}
+
+#verysimplelinkcollectionItemContainer a img {
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    padding: 0.5em;
+}
+#verysimplelinkcollectionItemContainer a:hover img,
+#verysimplelinkcollectionItemContainer a:focus img,
+#verysimplelinkcollectionItemContainer a:active img {
+    background-color: #fff;
+}
