@@ -1,0 +1,1072 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Zikula 1.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-03-13 19:09+0000\n"
+"PO-Revision-Date: 2014-03-13 20:51+0100\n"
+"Last-Translator: Ralf Köster <ralf@familie-koester.de>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: de\n"
+
+#: workflows/function.standard_permissioncheck.php:56
+msgid "Standard workflow (single approval)"
+msgstr "Standard Workflow (einfache Freigabe)"
+
+#: workflows/function.standard_permissioncheck.php:57
+msgid ""
+"This is a two staged workflow with stages for untrusted submissions and "
+"finally approved publications. It does not allow corrections of non-editors "
+"to published pages."
+msgstr ""
+"Dieses ist ein zweistufiger Workflow für unbekannte Einreicher und "
+"abschließend freigegebene Veröffentlichungen. Es sind keine Korrekturen für "
+"nicht authorisierte Nutzer möglich."
+
+#: workflows/function.standard_permissioncheck.php:61
+#: lib/VerySimpleLinkCollection/Util/Base/Workflow.php:28
+msgid "Initial"
+msgstr "Anfang"
+
+#: workflows/function.standard_permissioncheck.php:61
+msgid "Pseudo-state for content which is just created and not persisted yet."
+msgstr "Pseudo-Status für Inhalt, welcher aus der Datenbank gelöscht wurde."
+
+#: workflows/function.standard_permissioncheck.php:62
+#: lib/VerySimpleLinkCollection/Util/Base/ListEntries.php:158
+#: lib/VerySimpleLinkCollection/Util/Base/Workflow.php:31
+msgid "Waiting"
+msgstr "Wartend"
+
+#: workflows/function.standard_permissioncheck.php:62
+#: lib/VerySimpleLinkCollection/Util/Base/ListEntries.php:159
+msgid "Content has been submitted and waits for approval."
+msgstr "Inhalt wurde geprüft und wartet auf Freigabe."
+
+#: workflows/function.standard_permissioncheck.php:63
+#: lib/VerySimpleLinkCollection/Util/Base/ListEntries.php:163
+#: lib/VerySimpleLinkCollection/Util/Base/Workflow.php:34
+msgid "Approved"
+msgstr "Freigegeben"
+
+#: workflows/function.standard_permissioncheck.php:63
+#: lib/VerySimpleLinkCollection/Util/Base/ListEntries.php:164
+msgid "Content has been approved and is available online."
+msgstr "Inhalt wurde geprüft und ist online verfügbar."
+
+#: workflows/function.standard_permissioncheck.php:64
+#: lib/VerySimpleLinkCollection/Util/Base/Workflow.php:37
+msgid "Deleted"
+msgstr "Gelöscht"
+
+#: workflows/function.standard_permissioncheck.php:64
+msgid "Pseudo-state for content which has been deleted from the database."
+msgstr "Pseudo-Status für Inhalt, welcher aus der Datenbank gelöscht wurde."
+
+#: workflows/function.standard_permissioncheck.php:70
+#: templates/admin/link/view.tpl:124
+msgid "Submit"
+msgstr "Bestätigen"
+
+#: workflows/function.standard_permissioncheck.php:70
+msgid "Submit content for acceptance by a moderator."
+msgstr "Inhalt für die Freigabe durch einen Moderator bestätigen."
+
+#: workflows/function.standard_permissioncheck.php:71
+msgid "Submit and Approve"
+msgstr "Bestätigen und freigeben"
+
+#: workflows/function.standard_permissioncheck.php:71
+msgid "Submit content and approve immediately."
+msgstr "Inhalt bestätigen und sofort freigeben."
+
+#: workflows/function.standard_permissioncheck.php:75
+#: workflows/function.standard_permissioncheck.php:81
+msgid "Update"
+msgstr "Aktualisiert"
+
+#: workflows/function.standard_permissioncheck.php:75
+#: workflows/function.standard_permissioncheck.php:81
+msgid "Update content."
+msgstr "Aktualisiere Inhalt."
+
+#: workflows/function.standard_permissioncheck.php:76
+#: templates/admin/link/view.tpl:121
+msgid "Approve"
+msgstr "Freigeben"
+
+#: workflows/function.standard_permissioncheck.php:76
+#: templates/admin/link/view.tpl:121
+msgid "Update content and approve for immediate publishing."
+msgstr "Aktualisieren und Freigeben zum sofortigen Veröffentlichen"
+
+#: workflows/function.standard_permissioncheck.php:77
+#: workflows/function.standard_permissioncheck.php:82
+#: lib/VerySimpleLinkCollection/Entity/Base/Link.php:630
+#: lib/VerySimpleLinkCollection/Entity/Base/Link.php:631
+#: templates/admin/link/view.tpl:122 templates/admin/link/delete.tpl:7
+#: templates/admin/link/delete.tpl:20
+msgid "Delete"
+msgstr "Löschen"
+
+#: workflows/function.standard_permissioncheck.php:77
+#: workflows/function.standard_permissioncheck.php:82
+#: templates/admin/link/view.tpl:122
+msgid "Delete content permanently."
+msgstr "Inhalt dauerhaft löschen."
+
+#: templates/plugins/function.verysimplelinkcollectionTemplateHeaders.php:31
+#, php-format
+msgid "%1$s: missing parameter '%2$s'"
+msgstr "%1$s: fehlender Parameter '%2$s'"
+
+#: templates/plugins/function.verysimplelinkcollectionValidationError.php:36
+msgid "This is a required field."
+msgstr "Dies ist ein Pflichtfeld."
+
+#: templates/plugins/function.verysimplelinkcollectionValidationError.php:37
+msgid "Please enter a valid number in this field."
+msgstr "Bitte gib eine gültige Zahl ein."
+
+#: templates/plugins/function.verysimplelinkcollectionValidationError.php:38
+msgid ""
+"Please use numbers only in this field. please avoid spaces or other "
+"characters such as dots or commas."
+msgstr ""
+"Bitte nutze nur Zahlen in diesem Feld. Bitte vermeide Leerzeichen und andere "
+"Zeichen wie Punkt und Kommata."
+
+#: templates/plugins/function.verysimplelinkcollectionValidationError.php:39
+msgid "Please use letters only (a-z) in this field."
+msgstr "Bitte nutze nur Buchstaben (a-z) in diesem Feld."
+
+#: templates/plugins/function.verysimplelinkcollectionValidationError.php:40
+msgid ""
+"Please use only letters (a-z) or numbers (0-9) only in this field. No spaces "
+"or other characters are allowed."
+msgstr ""
+"Bitte nutze nur Buchstaben (a-z) oder Ziffern (0-9) in diesem Feld. Keine "
+"Leerzeichen oder andere Zeichen sind erlaubt."
+
+#: templates/plugins/function.verysimplelinkcollectionValidationError.php:41
+msgid "Please enter a valid date."
+msgstr "Bitte gib ein gültiges Datum ein."
+
+#: templates/plugins/function.verysimplelinkcollectionValidationError.php:42
+msgid "Please enter a valid email address. For example yourname@example.com ."
+msgstr ""
+"Bitte gib eine gültige email Adresse ein. Zum Beispiel deinname@beispiel."
+"com ."
+
+#: templates/plugins/function.verysimplelinkcollectionValidationError.php:43
+msgid "Please enter a valid URL."
+msgstr "Bitte gib eine gültige URL ein."
+
+# Ob das Datum so stimmt? oder muss ich . anstelle / verwenden?
+#: templates/plugins/function.verysimplelinkcollectionValidationError.php:44
+msgid ""
+"Please use this date format: dd/mm/yyyy. For example 17/03/2010 for the 17th "
+"of March, 2010."
+msgstr ""
+"Bitte nutze folgendes Datumsformat: dd/mm/yyyy. Beispiel: 17/03/2011 für den "
+"17. März 2010."
+
+# Passt das mit . oder brauche ich da nen ,?
+#: templates/plugins/function.verysimplelinkcollectionValidationError.php:45
+msgid "Please enter a valid $ amount. For example $100.00 ."
+msgstr "Bitte gib eine $ gültige Zahl ein. Zum Beispiel $ 100.00  ."
+
+#: templates/plugins/function.verysimplelinkcollectionValidationError.php:46
+msgid "Please make a selection."
+msgstr "Bitte triff eine Wahl."
+
+#: templates/plugins/function.verysimplelinkcollectionValidationError.php:47
+msgid "Please select one of the above options."
+msgstr "Bitte wähle eine der oberen Optionen."
+
+#: templates/plugins/function.verysimplelinkcollectionValidationError.php:50
+msgid "This value must not contain spaces."
+msgstr "Dieser Wert darf keine Leerzeichen enthalten."
+
+#: templates/plugins/function.verysimplelinkcollectionValidationError.php:51
+#: templates/plugins/function.verysimplelinkcollectionValidationError.php:53
+#: templates/plugins/function.verysimplelinkcollectionValidationError.php:55
+msgid "Please select a value in the past."
+msgstr "Bitte wähle einen Wert in der Vergangenheit"
+
+#: templates/plugins/function.verysimplelinkcollectionValidationError.php:52
+#: templates/plugins/function.verysimplelinkcollectionValidationError.php:54
+#: templates/plugins/function.verysimplelinkcollectionValidationError.php:56
+msgid "Please select a value in the future."
+msgstr "Bitte ein Datum in der Zukunft wählen."
+
+#: templates/plugins/function.verysimplelinkcollectionValidationError.php:57
+msgid "This value is already assigned, but must be unique. Please change it."
+msgstr ""
+"Dieser Wert existiert schon und er muss eindeutig sein. Bitte ändere ihn."
+
+#: templates/plugins/function.verysimplelinkcollectionObjectTypeSelector.php:30
+#: lib/VerySimpleLinkCollection/NewsletterPlugin/ItemList.php:70
+#: lib/VerySimpleLinkCollection/Api/Base/User.php:42
+#: lib/VerySimpleLinkCollection/Api/Base/Admin.php:42
+#: templates/search/options.tpl:5 templates/block/itemlist_modify.tpl:5
+msgid "Links"
+msgstr "Links"
+
+#: templates/plugins/function.verysimplelinkcollectionModerationObjects.php:24
+#, php-format
+msgid "Error! in %1$s: the %2$s parameter must be specified."
+msgstr "Fehler! in %1$s: der %2$s Parameter muss spezifiziert sein."
+
+#: templates/plugins/function.verysimplelinkcollectionTemplateSelector.php:30
+#: templates/block/itemlist_modify.tpl:52
+msgid "Only item titles"
+msgstr "Nur Titel"
+
+#: templates/plugins/function.verysimplelinkcollectionTemplateSelector.php:31
+#: templates/block/itemlist_modify.tpl:53
+msgid "With description"
+msgstr "Beschreibung"
+
+#: templates/plugins/function.verysimplelinkcollectionTemplateSelector.php:32
+#: templates/contenttype/itemlist_edit.tpl:67
+#: templates/block/itemlist_modify.tpl:54
+#: templates/block/itemlist_modify.tpl:59
+#, fuzzy
+msgid "Custom template"
+msgstr "Benutzer Template"
+
+#: lib/VerySimpleLinkCollection/Form/Handler/Admin/Base/Edit.php:221
+#: lib/VerySimpleLinkCollection/Form/Handler/Admin/Base/Edit.php:304
+#: lib/VerySimpleLinkCollection/Form/Handler/Admin/Base/Edit.php:336
+#: lib/VerySimpleLinkCollection/Form/Handler/User/Base/Edit.php:221
+#: lib/VerySimpleLinkCollection/Form/Handler/User/Base/Edit.php:304
+#: lib/VerySimpleLinkCollection/Form/Handler/User/Base/Edit.php:336
+#: lib/VerySimpleLinkCollection/Controller/Base/User.php:238
+#: lib/VerySimpleLinkCollection/Controller/Base/Admin.php:224
+#: lib/VerySimpleLinkCollection/Controller/Base/Admin.php:302
+#: lib/VerySimpleLinkCollection/Controller/Base/External.php:92
+msgid "No such item."
+msgstr "Kein solches Element"
+
+#: lib/VerySimpleLinkCollection/Form/Handler/Admin/Base/Edit.php:252
+#: lib/VerySimpleLinkCollection/Form/Handler/User/Base/Edit.php:252
+#: lib/VerySimpleLinkCollection/Controller/Base/Admin.php:311
+msgid "Error! Could not determine workflow actions."
+msgstr "Fehler! Kann den zugeordneten Workflow nicht laden."
+
+#: lib/VerySimpleLinkCollection/Form/Handler/Admin/Base/Edit.php:519
+#: lib/VerySimpleLinkCollection/Form/Handler/User/Base/Edit.php:519
+msgid "Done! Item created."
+msgstr "Erledigt! Element erstellt."
+
+#: lib/VerySimpleLinkCollection/Form/Handler/Admin/Base/Edit.php:521
+#: lib/VerySimpleLinkCollection/Form/Handler/User/Base/Edit.php:521
+msgid "Error! Creation attempt failed."
+msgstr "Fehler! Erstellung fehlgeschlagen."
+
+#: lib/VerySimpleLinkCollection/Form/Handler/Admin/Base/Edit.php:526
+#: lib/VerySimpleLinkCollection/Form/Handler/User/Base/Edit.php:526
+#: lib/VerySimpleLinkCollection/Controller/Base/Admin.php:482
+msgid "Done! Item updated."
+msgstr "Erledigt! Element aktualisiert."
+
+#: lib/VerySimpleLinkCollection/Form/Handler/Admin/Base/Edit.php:528
+#: lib/VerySimpleLinkCollection/Form/Handler/User/Base/Edit.php:528
+msgid "Error! Update attempt failed."
+msgstr "Fehler! Aktualisierung fehlgeschlagen"
+
+#: lib/VerySimpleLinkCollection/Form/Handler/Admin/Base/Edit.php:533
+#: lib/VerySimpleLinkCollection/Form/Handler/User/Base/Edit.php:533
+#: lib/VerySimpleLinkCollection/Controller/Base/Admin.php:337
+#: lib/VerySimpleLinkCollection/Controller/Base/Admin.php:480
+msgid "Done! Item deleted."
+msgstr "Erledigt! Element gelöscht."
+
+#: lib/VerySimpleLinkCollection/Form/Handler/Admin/Base/Edit.php:535
+#: lib/VerySimpleLinkCollection/Form/Handler/User/Base/Edit.php:535
+msgid "Error! Deletion attempt failed."
+msgstr "Fehler! Löschen fehlgeschlagen"
+
+#: lib/VerySimpleLinkCollection/Form/Handler/Admin/Link/Base/Edit.php:58
+#: lib/VerySimpleLinkCollection/Form/Handler/User/Link/Base/Edit.php:58
+msgid ""
+"Sorry, but you can not create the link yet as other items are required which "
+"must be created before!"
+msgstr ""
+
+#: lib/VerySimpleLinkCollection/Form/Handler/Admin/Link/Base/Edit.php:170
+#: lib/VerySimpleLinkCollection/Form/Handler/User/Link/Base/Edit.php:170
+msgid "Done! Link created."
+msgstr "Erledigt! Link erstellt."
+
+#: lib/VerySimpleLinkCollection/Form/Handler/Admin/Link/Base/Edit.php:172
+#: lib/VerySimpleLinkCollection/Form/Handler/Admin/Link/Base/Edit.php:179
+#: lib/VerySimpleLinkCollection/Form/Handler/User/Link/Base/Edit.php:172
+#: lib/VerySimpleLinkCollection/Form/Handler/User/Link/Base/Edit.php:179
+msgid "Done! Link updated."
+msgstr "Erledigt! Link aktualisiert."
+
+#: lib/VerySimpleLinkCollection/Form/Handler/Admin/Link/Base/Edit.php:176
+#: lib/VerySimpleLinkCollection/Form/Handler/User/Link/Base/Edit.php:176
+msgid "Done! Link deleted."
+msgstr "Erledigt! Link gelöscht."
+
+#: lib/VerySimpleLinkCollection/Form/Handler/Admin/Link/Base/Edit.php:205
+#: lib/VerySimpleLinkCollection/Form/Handler/User/Link/Base/Edit.php:205
+#: lib/VerySimpleLinkCollection/Controller/Base/Admin.php:472
+#, fuzzy, php-format
+msgid ""
+"Sorry, but an unknown error occured during the %s action. Please apply the "
+"changes again!"
+msgstr "Unbekannter Fehler"
+
+#: lib/VerySimpleLinkCollection/ContentType/Base/Item.php:52
+msgid "VerySimpleLinkCollection detail view"
+msgstr "Detailansicht"
+
+#: lib/VerySimpleLinkCollection/ContentType/Base/Item.php:64
+msgid "Display or link a single VerySimpleLinkCollection object."
+msgstr "Anzeigen oder verlinken einer einzelnen Stunde"
+
+#: lib/VerySimpleLinkCollection/ContentType/Base/Item.php:119
+msgid "No item selected."
+msgstr "Kein Element ausgewählt."
+
+#: lib/VerySimpleLinkCollection/ContentType/Base/ItemList.php:118
+#: lib/VerySimpleLinkCollection/Block/Base/ItemList.php:50
+msgid "VerySimpleLinkCollection list view"
+msgstr "Linkansicht"
+
+#: lib/VerySimpleLinkCollection/ContentType/Base/ItemList.php:130
+#: lib/VerySimpleLinkCollection/Block/Base/ItemList.php:51
+msgid "Display list of VerySimpleLinkCollection objects."
+msgstr "Zeige Liste der Links an"
+
+#: lib/VerySimpleLinkCollection/ContentType/Base/ItemList.php:409
+#: templates/external/link/find.tpl:36 templates/external/link/select.tpl:15
+#: templates/admin/link/view_quickNav.tpl:13
+#: templates/admin/link/view_quickNav.tpl:17
+#: templates/user/link/view_quickNav.tpl:13
+#: templates/user/link/view_quickNav.tpl:17
+#: templates/block/itemlist_modify.tpl:11
+msgid "All"
+msgstr "Alle"
+
+#: lib/VerySimpleLinkCollection/Base/Installer.php:31
+#: lib/VerySimpleLinkCollection/Base/Installer.php:123
+msgid "Doctrine Exception: "
+msgstr "Doctrine Ausnahmefall:"
+
+#: lib/VerySimpleLinkCollection/Base/Installer.php:33
+#, php-format
+msgid ""
+"An error was encountered while creating the tables for the %s extension."
+msgstr "Ein Fehler ist während des Erstellens der Tabellen für %s aufgetreten."
+
+#: lib/VerySimpleLinkCollection/Base/Installer.php:35
+msgid ""
+"Please enable the development mode by editing the /config/config.php file in "
+"order to reveal the error details."
+msgstr ""
+"Bitte aktiviere den Entwicklungsmodus durch Änderung der config/config.php "
+"Datei, um die Ursachen für diesen Fehler angezeigt zu bekommen."
+
+#: lib/VerySimpleLinkCollection/Base/Installer.php:55
+#, php-format
+msgid "Error! Could not create a category registry for the %s entity."
+msgstr ""
+
+#: lib/VerySimpleLinkCollection/Base/Installer.php:116
+#, fuzzy, php-format
+msgid ""
+"An error was encountered while removing stored object workflows for the %s "
+"extension."
+msgstr ""
+"Während des Entfernens gespeicherter Objekt Arbeitsabläufe für das Modul %s "
+"ist ein Fehler aufgetreten."
+
+#: lib/VerySimpleLinkCollection/Base/Installer.php:125
+#, php-format
+msgid "An error was encountered while dropping tables for the %s extension."
+msgstr ""
+"Ein Fehler ist während des Löschens der Tabellen für das Modul %s "
+"aufgetreten."
+
+#: lib/VerySimpleLinkCollection/Base/Version.php:30
+#: templates/user/header.tpl:12
+msgid "Very simple link collection"
+msgstr "Einfache Link Sammlung"
+
+#: lib/VerySimpleLinkCollection/Base/Version.php:32
+msgid "Very simple link collection module generated by ModuleStudio 0.6.1."
+msgstr "Ein sehr einfaches Linklisten-Modul generiert mit Modulestudio 0.6.1"
+
+#. ! url version of name, should be in lowercase without space
+#: lib/VerySimpleLinkCollection/Base/Version.php:34
+msgid "verysimplelinkcollection"
+msgstr "Einfache Link Sammlung"
+
+#: lib/VerySimpleLinkCollection/Base/Version.php:70
+msgid "verysimplelinkcollection Links Display Hooks"
+msgstr "Link Ansicht Hooks"
+
+#: lib/VerySimpleLinkCollection/Base/Version.php:88
+msgid "verysimplelinkcollection Links Filter Hooks"
+msgstr "Link Filter Hooks"
+
+#: lib/VerySimpleLinkCollection/Block/Base/ItemList.php:46
+#: lib/VerySimpleLinkCollection/Block/Base/Moderation.php:37
+msgid ""
+"Notice: This block will not be displayed until you activate the "
+"VerySimpleLinkCollection module."
+msgstr ""
+"Hinweis: Dieser Block wird erst angezeigt, wenn das Linkmodul aktiviert ist."
+
+#: lib/VerySimpleLinkCollection/Block/Base/ItemList.php:185
+msgid "VerySimpleLinkCollection items"
+msgstr "Einträge"
+
+#: lib/VerySimpleLinkCollection/Block/Base/Moderation.php:41
+#: lib/VerySimpleLinkCollection/Block/Base/Moderation.php:87
+msgid "Moderation"
+msgstr "Moderation"
+
+#: lib/VerySimpleLinkCollection/Block/Base/Moderation.php:42
+msgid "Show a list of pending tasks to moderators."
+msgstr "Zeigt eine Liste der wartenden Freigaben für Moderatoren an."
+
+# Letzte oder Neueste?
+#: lib/VerySimpleLinkCollection/NewsletterPlugin/ItemList.php:27
+msgid "Latest links"
+msgstr "Neueste Links"
+
+#: lib/VerySimpleLinkCollection/NewsletterPlugin/ItemList.php:37
+msgid "List of links"
+msgstr "Linkliste"
+
+#: lib/VerySimpleLinkCollection/NewsletterPlugin/ItemList.php:47
+msgid ""
+"This plugin shows a list of links of the VerySimpleLinkCollection module."
+msgstr ""
+"Dieses Plugin zeigt eine Liste von Links aus dem Einfachen Link Listen Modul"
+
+#: lib/VerySimpleLinkCollection/Util/Base/ListEntries.php:168
+msgid "All except waiting"
+msgstr "Alle außer Wartende"
+
+#: lib/VerySimpleLinkCollection/Util/Base/ListEntries.php:169
+msgid "Shows all items except these which are waiting"
+msgstr "Zeigt alle Links außer den Wartenden"
+
+#: lib/VerySimpleLinkCollection/Util/Base/ListEntries.php:173
+msgid "All except approved"
+msgstr "Alle außer Freigegebene"
+
+#: lib/VerySimpleLinkCollection/Util/Base/ListEntries.php:174
+msgid "Shows all items except these which are approved"
+msgstr "Zeigt alle Links außer den Freigegebenen"
+
+#: lib/VerySimpleLinkCollection/Util/Base/Workflow.php:218
+msgid "Links pending approval"
+msgstr "Link wartet auf Freigabe"
+
+#: lib/VerySimpleLinkCollection/Util/Base/Workflow.php:222
+#, php-format
+msgid "One link is waiting for approval."
+msgid_plural "%s links are waiting for approval."
+msgstr[0] "Wartend"
+msgstr[1] ""
+
+#: lib/VerySimpleLinkCollection/Entity/Validator/Base/Link.php:31
+#, php-format
+msgid "Error! Field value may only contain digits (%s)."
+msgstr "Fehler! Der Wert des Feldes darf nur Ziffern beinhalten (%s)."
+
+#: lib/VerySimpleLinkCollection/Entity/Validator/Base/Link.php:35
+#: lib/VerySimpleLinkCollection/Entity/Validator/Base/Link.php:43
+#: lib/VerySimpleLinkCollection/Entity/Validator/Base/Link.php:51
+#: lib/VerySimpleLinkCollection/Entity/Validator/Base/Link.php:55
+#, php-format
+msgid "Error! Length of field value must not be higher than %2$s (%1$s)."
+msgstr "Fehler! Die Länge des Feldes darf nicht größer als %2$s (%1$s) sein."
+
+#: lib/VerySimpleLinkCollection/Entity/Validator/Base/Link.php:39
+#: lib/VerySimpleLinkCollection/Entity/Validator/Base/Link.php:47
+#: lib/VerySimpleLinkCollection/Entity/Validator/Base/Link.php:59
+#, php-format
+msgid "Error! Field value must not be empty (%s)."
+msgstr "Fehler! Der Wert des Feldes darf nicht leer sein (%s)."
+
+#: lib/VerySimpleLinkCollection/Entity/Validator/Base/Link.php:63
+#, php-format
+msgid "Error! Field value must be a valid url (%s)."
+msgstr "Fehler! Das Feld mus eine gültige URL haben (%s)."
+
+#: lib/VerySimpleLinkCollection/Entity/Repository/Base/Link.php:242
+#: lib/VerySimpleLinkCollection/Entity/Repository/Base/Link.php:267
+#: lib/VerySimpleLinkCollection/Entity/Repository/Base/Link.php:294
+#: lib/VerySimpleLinkCollection/Entity/Repository/Base/Link.php:321
+msgid "Invalid user identifier received."
+msgstr "Fehler! Ungültiger Benutzer Bezeichner aufgerufen."
+
+#: lib/VerySimpleLinkCollection/Entity/Repository/Base/Link.php:361
+#: lib/VerySimpleLinkCollection/Api/Base/Selection.php:68
+msgid "Invalid identifier received."
+msgstr "Fehler! Ungültiger Bezeichner aufgerufen."
+
+#: lib/VerySimpleLinkCollection/Entity/Base/Link.php:524
+msgid "Error! Could not load the associated workflow."
+msgstr "Fehler! Kann den zugeordneten Workflow nicht laden."
+
+#: lib/VerySimpleLinkCollection/Entity/Base/Link.php:599
+msgid "Open preview page"
+msgstr "Vorschau öffnen"
+
+#: lib/VerySimpleLinkCollection/Entity/Base/Link.php:600
+msgid "Preview"
+msgstr "Vorschau"
+
+#: lib/VerySimpleLinkCollection/Entity/Base/Link.php:606
+#: lib/VerySimpleLinkCollection/Entity/Base/Link.php:650
+#: templates/admin/link/display.tpl:8
+msgid "Details"
+msgstr "Details"
+
+#: lib/VerySimpleLinkCollection/Entity/Base/Link.php:616
+#: lib/VerySimpleLinkCollection/Entity/Base/Link.php:617
+#: lib/VerySimpleLinkCollection/Entity/Base/Link.php:660
+#: lib/VerySimpleLinkCollection/Entity/Base/Link.php:661
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: lib/VerySimpleLinkCollection/Entity/Base/Link.php:622
+#: lib/VerySimpleLinkCollection/Entity/Base/Link.php:666
+msgid "Reuse for new item"
+msgstr "Für ein neues Element benutzen"
+
+#: lib/VerySimpleLinkCollection/Entity/Base/Link.php:623
+#: lib/VerySimpleLinkCollection/Entity/Base/Link.php:667
+msgid "Reuse"
+msgstr "Wiederverwenden"
+
+#: lib/VerySimpleLinkCollection/Entity/Base/Link.php:639
+#: lib/VerySimpleLinkCollection/Entity/Base/Link.php:640
+#: lib/VerySimpleLinkCollection/Entity/Base/Link.php:675
+#: lib/VerySimpleLinkCollection/Entity/Base/Link.php:676
+msgid "Back to overview"
+msgstr "Zurück zur Übersicht"
+
+#: lib/VerySimpleLinkCollection/Entity/Base/Link.php:870
+msgid "Error! Could not remove stored workflow. Deletion has been aborted."
+msgstr ""
+"Fehler! Konnte den gespeicherten Workflow nicht entfernen. Löschen wurde "
+"abgebrochen."
+
+#: lib/VerySimpleLinkCollection/Api/Base/Selection.php:170
+msgid "Invalid object type received."
+msgstr "Ungültigen Objekt Typen (object type) aufgerufen."
+
+#: lib/VerySimpleLinkCollection/Api/Base/Search.php:145
+msgid "Error! Could not save the search results."
+msgstr "Fehler! Kann das Suchergebnis nicht speichern"
+
+#: lib/VerySimpleLinkCollection/Api/Base/User.php:30
+msgid "Backend"
+msgstr "Backend"
+
+#: lib/VerySimpleLinkCollection/Api/Base/User.php:31
+msgid "Switch to administration area."
+msgstr "Wechsel zum Administrationsbereich."
+
+#: lib/VerySimpleLinkCollection/Api/Base/User.php:43
+#: lib/VerySimpleLinkCollection/Api/Base/Admin.php:43
+#: templates/admin/link/view.tpl:4 templates/user/link/view.tpl:4
+msgid "Link list"
+msgstr "Linkliste"
+
+#: lib/VerySimpleLinkCollection/Api/Base/User.php:60
+#: lib/VerySimpleLinkCollection/Api/Base/User.php:202
+msgid "Invalid arguments array received."
+msgstr "Fehlerhaftes Argument im Array erhalten."
+
+#: lib/VerySimpleLinkCollection/Api/Base/Admin.php:30
+msgid "Frontend"
+msgstr "Frontend"
+
+#: lib/VerySimpleLinkCollection/Api/Base/Admin.php:31
+msgid "Switch to user area."
+msgstr "Wechsel zum Nutzerbereich."
+
+#: lib/VerySimpleLinkCollection/Controller/Base/User.php:235
+#: lib/VerySimpleLinkCollection/Controller/Base/Admin.php:221
+#: lib/VerySimpleLinkCollection/Controller/Base/Admin.php:299
+#: lib/VerySimpleLinkCollection/Controller/Base/External.php:86
+msgid "Error! Invalid identifier received."
+msgstr "Fehler! Ungültiger Bezeichner aufgerufen."
+
+#: lib/VerySimpleLinkCollection/Controller/Base/Admin.php:321
+msgid "Error! It is not allowed to delete this entity."
+msgstr "Fehler! Es ist nicht erlaubt, diesen Eintrag zu löschen."
+
+#: lib/VerySimpleLinkCollection/Controller/Base/External.php:164
+msgid "Error: Invalid editor context given for external controller action."
+msgstr ""
+
+#: templates/plugin_config/ItemList.tpl:14
+#: templates/contenttype/itemlist_edit.tpl:38
+#: templates/block/itemlist_modify.tpl:36
+msgid "Sorting"
+msgstr "Sortierung"
+
+#: templates/plugin_config/ItemList.tpl:16
+#: templates/contenttype/itemlist_edit.tpl:42
+#: templates/block/itemlist_modify.tpl:38
+msgid "Random"
+msgstr "Zufall"
+
+#: templates/plugin_config/ItemList.tpl:17
+#: templates/contenttype/itemlist_edit.tpl:45
+#: templates/block/itemlist_modify.tpl:39
+msgid "Newest"
+msgstr "Aktuellste"
+
+#: templates/plugin_config/ItemList.tpl:18
+#: templates/contenttype/itemlist_edit.tpl:48
+#: templates/block/itemlist_modify.tpl:40
+msgid "Default"
+msgstr "Standard"
+
+#: templates/plugin_config/ItemList.tpl:22
+#: templates/contenttype/itemlist_edit.tpl:54
+#: templates/block/itemlist_modify.tpl:45
+msgid "Amount"
+msgstr "Anzahl"
+
+#: templates/plugin_config/ItemList.tpl:27
+#: templates/contenttype/itemlist_edit.tpl:74
+#: templates/block/itemlist_modify.tpl:65
+msgid "Filter (expert option)"
+msgstr "Filter ( Expertenoption )"
+
+#: templates/plugin_config/ItemList.tpl:30
+#: templates/contenttype/itemlist_edit.tpl:78
+#: templates/block/itemlist_modify.tpl:68
+msgid "Syntax examples"
+msgstr "Syntax Beispiele"
+
+#: templates/plugin_config/ItemList.tpl:30
+#: templates/contenttype/itemlist_edit.tpl:78
+#: templates/block/itemlist_modify.tpl:68
+msgid "or"
+msgstr "oder"
+
+#: templates/plugin_config/ItemList.tpl:36
+msgid "No object types found."
+msgstr "Keine Einträge gefunden."
+
+#: templates/external/link/find.tpl:5 templates/external/link/find.tpl:33
+msgid "Search and select link"
+msgstr "Link suchen und auswählen"
+
+#: templates/external/link/find.tpl:41 templates/external/link/select.tpl:20
+#: templates/admin/include_categories_edit.tpl:11
+#: templates/admin/link/view_quickNav.tpl:21
+#: templates/contenttype/itemlist_edit.tpl:22
+#: templates/user/include_categories_edit.tpl:11
+#: templates/user/link/view_quickNav.tpl:21
+#: templates/block/itemlist_modify.tpl:16
+msgid "Category"
+msgstr "Kategorie"
+
+#: templates/external/link/find.tpl:46 templates/external/link/select.tpl:25
+#: templates/admin/include_categories_edit.tpl:3
+#: templates/admin/include_categories_edit.tpl:8
+#: templates/admin/include_categories_edit.tpl:14
+#: templates/admin/link/view_quickNav.tpl:26
+#: templates/admin/include_categories_display.tpl:4
+#: templates/admin/include_categories_display.tpl:7
+#: templates/contenttype/itemlist_edit.tpl:25
+#: templates/user/include_categories_edit.tpl:3
+#: templates/user/include_categories_edit.tpl:8
+#: templates/user/include_categories_edit.tpl:14
+#: templates/user/link/view_quickNav.tpl:26
+#: templates/user/include_categories_display.tpl:4
+#: templates/user/include_categories_display.tpl:7
+#: templates/block/itemlist_modify.tpl:21
+msgid "Categories"
+msgstr "Kategorien"
+
+#: templates/external/link/find.tpl:54
+#: templates/contenttype/itemlist_edit.tpl:30
+#: templates/block/itemlist_modify.tpl:29
+msgid "This is an optional filter."
+msgstr "Dies ist ein optionaler Filter"
+
+#: templates/external/link/find.tpl:61
+msgid "Paste as"
+msgstr "Einfügen als"
+
+#: templates/external/link/find.tpl:63
+msgid "Link to the link"
+msgstr "Link"
+
+#: templates/external/link/find.tpl:64
+msgid "ID of link"
+msgstr "ID des Links"
+
+#: templates/external/link/find.tpl:70 templates/external/link/select.tpl:39
+#: templates/admin/link/display.tpl:4 templates/user/link/display.tpl:4
+msgid "Link"
+msgstr "Link"
+
+#: templates/external/link/find.tpl:82 templates/external/link/select.tpl:44
+#: templates/contenttype/itemlist_link_display_description.tpl:11
+msgid "No entries found."
+msgstr "Keine Einträge gefunden."
+
+#: templates/external/link/find.tpl:89 templates/external/link/select.tpl:50
+#: templates/admin/link/view_quickNav.tpl:52
+#: templates/user/link/view_quickNav.tpl:52
+msgid "Sort by"
+msgstr "Sortiert nach"
+
+#: templates/external/link/find.tpl:91 templates/external/link/select.tpl:52
+#: templates/admin/link/view_quickNav.tpl:55
+#: templates/user/link/view_quickNav.tpl:55
+msgid "Id"
+msgstr "ID"
+
+#: templates/external/link/find.tpl:92 templates/external/link/select.tpl:53
+#: templates/admin/link/view_quickNav.tpl:39
+#: templates/admin/link/view_quickNav.tpl:56
+#: templates/user/link/view_quickNav.tpl:39
+#: templates/user/link/view_quickNav.tpl:56
+msgid "Workflow state"
+msgstr "Status Workflow"
+
+#: templates/external/link/find.tpl:93 templates/external/link/select.tpl:54
+#: templates/admin/link/display.tpl:15
+#: templates/admin/link/view_quickNav.tpl:57 templates/admin/link/view.tpl:58
+#: templates/admin/link/edit.tpl:31 templates/user/link/display.tpl:12
+#: templates/user/link/view_quickNav.tpl:57 templates/user/link/view.tpl:47
+#: templates/user/link/edit.tpl:25
+msgid "Link name"
+msgstr "Link Name"
+
+#: templates/external/link/find.tpl:94 templates/external/link/select.tpl:55
+#: templates/admin/link/display.tpl:17
+#: templates/admin/link/view_quickNav.tpl:58 templates/admin/link/view.tpl:61
+#: templates/admin/link/edit.tpl:37 templates/user/link/display.tpl:14
+#: templates/user/link/view_quickNav.tpl:58 templates/user/link/view.tpl:50
+#: templates/user/link/edit.tpl:31
+msgid "Link text"
+msgstr "Link Beschreibung"
+
+#: templates/external/link/find.tpl:95 templates/external/link/select.tpl:56
+#: templates/admin/link/display.tpl:19
+#: templates/admin/link/view_quickNav.tpl:59 templates/admin/link/view.tpl:64
+#: templates/admin/link/edit.tpl:42 templates/user/link/display.tpl:16
+#: templates/user/link/view_quickNav.tpl:59 templates/user/link/view.tpl:53
+#: templates/user/link/edit.tpl:36
+msgid "Link u r l"
+msgstr "Link URL"
+
+#: templates/external/link/find.tpl:96 templates/external/link/select.tpl:57
+#: templates/admin/link/view_quickNav.tpl:60
+#: templates/user/link/view_quickNav.tpl:60
+msgid "Creation date"
+msgstr "Erstellungsdatum"
+
+#: templates/external/link/find.tpl:97 templates/external/link/select.tpl:58
+#: templates/admin/link/view_quickNav.tpl:61
+#: templates/user/link/view_quickNav.tpl:61
+msgid "Creator"
+msgstr "Ersteller"
+
+#: templates/external/link/find.tpl:98 templates/external/link/select.tpl:59
+#: templates/admin/link/view_quickNav.tpl:62
+#: templates/user/link/view_quickNav.tpl:62
+msgid "Update date"
+msgstr "Aktualisierungsdatum"
+
+#: templates/external/link/find.tpl:101 templates/external/link/select.tpl:62
+#: templates/admin/link/view_quickNav.tpl:65
+#: templates/user/link/view_quickNav.tpl:65
+msgid "ascending"
+msgstr "Aufsteigend"
+
+#: templates/external/link/find.tpl:102 templates/external/link/select.tpl:63
+#: templates/admin/link/view_quickNav.tpl:66
+#: templates/user/link/view_quickNav.tpl:66
+msgid "descending"
+msgstr "Absteigend"
+
+#: templates/external/link/find.tpl:107
+#: templates/admin/link/view_quickNav.tpl:73
+#: templates/user/link/view_quickNav.tpl:73
+msgid "Page size"
+msgstr "Elemente pro Seite"
+
+#: templates/external/link/find.tpl:120 templates/external/link/select.tpl:68
+msgid "Search for"
+msgstr "Link suchen"
+
+#: templates/external/link/find.tpl:122 templates/external/link/select.tpl:70
+msgid "Filter"
+msgstr "Filter"
+
+#: templates/external/link/find.tpl:128
+msgid "Change selection"
+msgstr "Bitte ändere die Wahl."
+
+#: templates/external/link/find.tpl:129 templates/admin/link/edit.tpl:93
+#: templates/admin/link/delete.tpl:22 templates/user/link/edit.tpl:87
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: templates/external/link/select.tpl:4
+msgid "Link information"
+msgstr "Link Information"
+
+#: templates/admin/include_standardfields_edit.tpl:4
+#: templates/admin/include_standardfields_edit.tpl:9
+#: templates/admin/include_standardfields_display.tpl:4
+#: templates/admin/include_standardfields_display.tpl:7
+#: templates/user/include_standardfields_edit.tpl:4
+#: templates/user/include_standardfields_edit.tpl:9
+#: templates/user/include_standardfields_display.tpl:4
+#: templates/user/include_standardfields_display.tpl:7
+msgid "Creation and update"
+msgstr "Erstellung und Aktualisierung"
+
+#: templates/admin/include_standardfields_edit.tpl:13
+#: templates/user/include_standardfields_edit.tpl:13
+#, php-format
+msgid "Created by %s"
+msgstr "Erstellt von %s"
+
+#: templates/admin/include_standardfields_edit.tpl:14
+#: templates/user/include_standardfields_edit.tpl:14
+#, php-format
+msgid "Created on %s"
+msgstr "Erstellt von %s"
+
+#: templates/admin/include_standardfields_edit.tpl:18
+#: templates/user/include_standardfields_edit.tpl:18
+#, php-format
+msgid "Updated by %s"
+msgstr "Aktualisiert von %s"
+
+#: templates/admin/include_standardfields_edit.tpl:19
+#: templates/user/include_standardfields_edit.tpl:19
+#, php-format
+msgid "Updated on %s"
+msgstr "Aktualisiert von %s"
+
+#: templates/admin/link/display.tpl:9 templates/admin/link/view.tpl:66
+#: templates/admin/link/view.tpl:93 templates/user/link/display.tpl:7
+#: templates/user/link/view.tpl:55 templates/user/link/view.tpl:79
+msgid "Actions"
+msgstr "Aktionen"
+
+#: templates/admin/link/display.tpl:13 templates/admin/link/view.tpl:55
+#: templates/user/link/display.tpl:10 templates/user/link/view.tpl:44
+msgid "State"
+msgstr "Status"
+
+# passt das?
+#: templates/admin/link/display.tpl:21 templates/admin/link/view.tpl:86
+#: templates/user/link/display.tpl:18 templates/user/link/view.tpl:72
+msgid "Visit this page"
+msgstr "Seite aufrufen"
+
+#: templates/admin/link/display.tpl:21 templates/admin/link/view.tpl:86
+#: templates/user/link/display.tpl:18 templates/user/link/view.tpl:72
+msgid "Homepage"
+msgstr "Homepage"
+
+#: templates/admin/link/view_quickNav.tpl:6
+#: templates/user/link/view_quickNav.tpl:6
+msgid "Quick navigation"
+msgstr "Schnellnavigation"
+
+#: templates/admin/link/view_quickNav.tpl:48
+#: templates/user/link/view_quickNav.tpl:48
+msgid "Search"
+msgstr "Suchen"
+
+#: templates/admin/link/view_quickNav.tpl:84
+#: templates/user/link/view_quickNav.tpl:84
+msgid "OK"
+msgstr "OK"
+
+#: templates/admin/link/include_displayItemListMany.tpl:16
+#: templates/admin/link/include_displayItemListOne.tpl:13
+#: templates/user/link/include_displayItemListMany.tpl:19
+#: templates/user/link/include_displayItemListOne.tpl:15
+msgid "Open quick view window"
+msgstr "Fenster für Schnellansicht öffnen"
+
+#: templates/admin/link/include_displayItemListMany.tpl:16
+#: templates/admin/link/include_displayItemListOne.tpl:13
+#: templates/user/link/include_displayItemListMany.tpl:19
+#: templates/user/link/include_displayItemListOne.tpl:15
+msgid "Quick view"
+msgstr "Schnellansicht"
+
+#: templates/admin/link/view.tpl:13 templates/admin/link/edit.tpl:10
+#: templates/user/link/view.tpl:10 templates/user/link/edit.tpl:9
+msgid "Create link"
+msgstr "Erstelle Link"
+
+#: templates/admin/link/view.tpl:23 templates/user/link/view.tpl:20
+msgid "Back to paginated view"
+msgstr "Zurück zur Seitenansicht"
+
+#: templates/admin/link/view.tpl:29 templates/user/link/view.tpl:26
+msgid "Show all entries"
+msgstr "Zeige alle Einträge"
+
+#: templates/admin/link/view.tpl:106 templates/user/link/view.tpl:92
+msgid "No links found."
+msgstr "Keine Links gefunden"
+
+#: templates/admin/link/view.tpl:118
+msgid "With selected links"
+msgstr "Mit ausgewählten Links"
+
+#: templates/admin/link/view.tpl:120
+msgid "Choose action"
+msgstr "Aktion auswählen"
+
+#: templates/admin/link/edit.tpl:7 templates/admin/link/edit.tpl:13
+#: templates/user/link/edit.tpl:7 templates/user/link/edit.tpl:11
+msgid "Edit link"
+msgstr "Bearbeiten"
+
+#: templates/admin/link/edit.tpl:28 templates/user/link/edit.tpl:22
+msgid "Content"
+msgstr "Inhalt"
+
+#: templates/admin/link/edit.tpl:32 templates/user/link/edit.tpl:26
+msgid "Enter the link name of the link"
+msgstr "Linkname eingeben"
+
+#: templates/admin/link/edit.tpl:38 templates/user/link/edit.tpl:32
+msgid "Enter the link text of the link"
+msgstr "Eine Beschreibung zum Link eingeben"
+
+#: templates/admin/link/edit.tpl:43 templates/user/link/edit.tpl:37
+msgid "Enter the link u r l of the link"
+msgstr "Die URL (inkl. http// bzw. https//) eingeben"
+
+#: templates/admin/link/edit.tpl:72 templates/user/link/edit.tpl:66
+msgid "Return control"
+msgstr "Weiterleitungkontrolle"
+
+#: templates/admin/link/edit.tpl:74 templates/user/link/edit.tpl:68
+msgid "Create another item after save"
+msgstr "Einen weiteren Link nach dem Speichern erstellen"
+
+#: templates/admin/link/edit.tpl:87 templates/user/link/edit.tpl:81
+msgid "Really delete this link?"
+msgstr "Diesen Link wirklich löschen?"
+
+#: templates/admin/link/delete.tpl:4
+msgid "Delete link"
+msgstr "Link löschen"
+
+#: templates/admin/link/delete.tpl:11
+msgid "Do you really want to delete this link ?"
+msgstr "Möchtest du diesen Link wirklich löschen?"
+
+#: templates/admin/link/delete.tpl:18
+msgid "Confirmation prompt"
+msgstr "Sicherheitsabfrage"
+
+#: templates/admin/include_standardfields_display.tpl:11
+#: templates/user/include_standardfields_display.tpl:11
+msgid "Creation"
+msgstr "Erstellung"
+
+#: templates/admin/include_standardfields_display.tpl:22
+#: templates/user/include_standardfields_display.tpl:22
+#, php-format
+msgid "Created by %1$s on %2$s"
+msgstr "Erstellt von %1$s am %2$s"
+
+#: templates/admin/include_standardfields_display.tpl:25
+#: templates/user/include_standardfields_display.tpl:25
+msgid "Last update"
+msgstr "Letzte Aktualisierung"
+
+#: templates/admin/include_standardfields_display.tpl:36
+#: templates/user/include_standardfields_display.tpl:36
+#, php-format
+msgid "Updated by %1$s on %2$s"
+msgstr "Aktualisiert von %1$s am %2$s"
+
+#: templates/contenttype/item_edit.tpl:5
+#: templates/contenttype/itemlist_edit.tpl:3
+#: templates/block/itemlist_modify.tpl:3
+msgid "Object type"
+msgstr "Objekttyp"
+
+#: templates/contenttype/item_edit.tpl:8
+#: templates/contenttype/itemlist_edit.tpl:7
+msgid ""
+"If you change this please save the element once to reload the parameters "
+"below."
+msgstr ""
+"Wenn dieses geändert wurde, bitte das Element einmal speicher, um die "
+"nachfolgenden Parameter neu zu laden."
+
+#: templates/contenttype/item_edit.tpl:11
+msgid ""
+"Please select your item here. You can resort the dropdown list and reduce "
+"it's entries by applying filters. On the right side you will see a preview "
+"of the selected entry."
+msgstr ""
+"Bitte das Elemnt wählen. Die Drowpdownliste kann umsortiert werden und die "
+"Einträge können mit den Filtern reduziert werden. Auf der rechten Seite wird "
+"eine Vorschau des ausgewählten Elemente angezeigt."
+
+#: templates/contenttype/item_edit.tpl:17
+msgid "Link to object"
+msgstr "Link zum Objekt"
+
+#: templates/contenttype/item_edit.tpl:19
+msgid "Embed object display"
+msgstr "Anzeige einbetten"
+
+#: templates/contenttype/itemlist_link_display.tpl:4
+#: templates/contenttype/itemlist_link_display_description.tpl:8
+msgid "Read more"
+msgstr "Mehr lesen"
+
+#: templates/contenttype/itemlist_edit.tpl:60
+#: templates/block/itemlist_modify.tpl:50
+msgid "Template"
+msgstr "Template"
+
+#: templates/contenttype/itemlist_edit.tpl:70
+#: templates/block/itemlist_modify.tpl:61
+msgid "Example"
+msgstr "Beispiel"
+
+#: templates/block/itemlist_modify.tpl:7
+msgid ""
+"If you change this please save the block once to reload the parameters below."
+msgstr ""
+"Wenn dieses geändert wurde, bitte den Block einmal speichern, um die "
+"nachfolgenden Parameter neu zu laden."
