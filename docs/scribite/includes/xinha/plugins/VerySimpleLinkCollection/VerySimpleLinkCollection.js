@@ -34,7 +34,7 @@ VerySimpleLinkCollection._pluginInfo = {
     version       : '0.0.1',
     developer     : 'Ralf Koester',
     developer_url : 'http://support.zikula.de',
-    sponsor       : 'ModuleStudio 0.6.1',
+    sponsor       : 'ModuleStudio 0.6.2',
     sponsor_url   : 'http://modulestudio.de',
     license       : 'htmlArea'
 };

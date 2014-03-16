@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Zikula 1.x\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-13 20:49+0000\n"
-"PO-Revision-Date: 2014-03-13 21:54+0100\n"
+"PO-Revision-Date: 2014-03-13 22:11+0100\n"
 "Last-Translator: Ralf Köster <ralf@familie-koester.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -810,7 +810,7 @@ msgstr "Link Beschreibung"
 #: templates/user/link/edit.tpl:36 templates/user/link/display.most.tpl:16
 #: templates/user/link/view_quickNav.most.tpl:59
 msgid "Link url"
-msgstr "Bitte gib eine gültige url ein."
+msgstr "Link zur URL"
 
 #: templates/external/link/find.tpl:96 templates/external/link/select.tpl:57
 #: templates/admin/link/view_quickNav.tpl:60
