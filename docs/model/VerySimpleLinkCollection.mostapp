@@ -1,0 +1,87 @@
+application VerySimpleLinkCollection {
+	vendor Koester
+	author "Ralf Koester"
+	email "ralf@familie-koester.de"
+	url "http://support.zikula.de"
+	version "0.0.1"
+	prefix vslc
+	generatorSettings {
+		settingsContainer targetCoreVersion ZK135
+		generateAccountApi false
+		generateMailzApi false
+		generateRssTemplates false
+		generateAtomTemplates false
+		generateCsvTemplates false
+		generateXmlTemplates false
+		generateJsonTemplates false
+		generateKmlTemplates false
+		generateTests false
+		writeModelToDocs true
+		skipFiles "CHANGELOG.md, README.md"
+		markFiles "templates/user/link/view.tpl, templates/user/link/display.tpl, templates/user/link/view_quickNav.tpl, "
+	}
+	modelLayer {
+		modelContainer Model {
+			entities {
+				entity link leading categorisable categorisableMultiSelection {
+					nameMultiple links
+					displayPattern "#linkName#"
+					workflow STANDARD
+					fields {
+						string linkName,
+						text linkText {
+							mandatory false
+						},
+						url linkUrl {
+							defaultValue ""
+						}
+					}
+				}
+			}
+			variables {
+				varContainer Variables {
+					vars {
+						intVar pageSize {
+							value "20"
+						}
+					}
+				}
+			}
+		}
+	}
+	controllerLayer {
+		controllerContainer Controller {
+			modelContext ( "VerySimpleLinkCollection.Model" )
+			processViews "VerySimpleLinkCollection.View"
+			controllers {
+				adminController Admin {
+					actions {
+						mainAction Main,
+						viewAction View,
+						displayAction Display,
+						deleteAction Delete,
+						editAction Edit
+					}
+				},
+				userController User {
+					actions {
+						mainAction Main,
+						viewAction View,
+						displayAction Display,
+						editAction Edit
+					}
+				},
+				ajaxController Ajax {
+					actions {
+						mainAction Main
+					}
+				}
+			}
+		}
+	}
+	viewLayer {
+		viewContainer View {
+			controller "VerySimpleLinkCollection.Controller"
+		}
+	}
+}
